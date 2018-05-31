@@ -13,6 +13,9 @@
 		7E79931D20BFE9E800918093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E79931C20BFE9E800918093 /* Assets.xcassets */; };
 		7E79932020BFE9E800918093 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E79931E20BFE9E800918093 /* LaunchScreen.storyboard */; };
 		7E79932820BFF0A000918093 /* metalFirst.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7E79932720BFF0A000918093 /* metalFirst.metal */; };
+		7E79932A20BFF18B00918093 /* Watermark+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E79932920BFF18B00918093 /* Watermark+Extension.swift */; };
+		7E79932D20BFF65F00918093 /* video.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 7E79932B20BFF65F00918093 /* video.MP4 */; };
+		7E79932E20BFF65F00918093 /* test.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7E79932C20BFF65F00918093 /* test.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		7E79931F20BFE9E800918093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E79932120BFE9E800918093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E79932720BFF0A000918093 /* metalFirst.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = metalFirst.metal; sourceTree = "<group>"; };
+		7E79932920BFF18B00918093 /* Watermark+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Watermark+Extension.swift"; sourceTree = "<group>"; };
+		7E79932B20BFF65F00918093 /* video.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.MP4; sourceTree = "<group>"; };
+		7E79932C20BFF65F00918093 /* test.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,10 @@
 			children = (
 				7E79931520BFE9E700918093 /* AppDelegate.swift */,
 				7E79931720BFE9E700918093 /* ViewController.swift */,
+				7E79932920BFF18B00918093 /* Watermark+Extension.swift */,
 				7E79932720BFF0A000918093 /* metalFirst.metal */,
+				7E79932C20BFF65F00918093 /* test.JPG */,
+				7E79932B20BFF65F00918093 /* video.MP4 */,
 				7E79931920BFE9E700918093 /* Main.storyboard */,
 				7E79931C20BFE9E800918093 /* Assets.xcassets */,
 				7E79931E20BFE9E800918093 /* LaunchScreen.storyboard */,
@@ -128,6 +137,8 @@
 				7E79932020BFE9E800918093 /* LaunchScreen.storyboard in Resources */,
 				7E79931D20BFE9E800918093 /* Assets.xcassets in Resources */,
 				7E79931B20BFE9E700918093 /* Main.storyboard in Resources */,
+				7E79932E20BFF65F00918093 /* test.JPG in Resources */,
+				7E79932D20BFF65F00918093 /* video.MP4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +151,7 @@
 			files = (
 				7E79931820BFE9E700918093 /* ViewController.swift in Sources */,
 				7E79931620BFE9E700918093 /* AppDelegate.swift in Sources */,
+				7E79932A20BFF18B00918093 /* Watermark+Extension.swift in Sources */,
 				7E79932820BFF0A000918093 /* metalFirst.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
