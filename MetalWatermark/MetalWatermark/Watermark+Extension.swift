@@ -89,6 +89,7 @@ extension URL {
         } else {
             sizeOfVideo = CGSize.zero
         }
+        print("sizeOfVideo-\(sizeOfVideo)")
         
         // 水印layer
         let optionalLayer = CALayer()
@@ -97,9 +98,8 @@ extension URL {
         // 计算水印的位置
         let margin: CGFloat = 20
         let x = (sizeOfVideo.width - waterImage.size.width) / 2
-        let y = sizeOfVideo.height - waterImage.size.height - margin
         let waterRect = CGRect(x: x,
-                               y: y,
+                               y: margin,
                                width: waterImage.size.width,
                                height: waterImage.size.height)
         watermarkLayer.frame = waterRect
@@ -108,6 +108,7 @@ extension URL {
         optionalLayer.frame = CGRect(x: 0, y: 0, width: sizeOfVideo.width, height: sizeOfVideo.height)
         optionalLayer.masksToBounds = true
         
+        //
         let parentLayer = CALayer()
         let videoLayer = CALayer()
         parentLayer.frame = CGRect(x: 0, y: 0, width: sizeOfVideo.width, height: sizeOfVideo.height)
@@ -133,6 +134,7 @@ extension URL {
         let processedUrl = processedMoviePath()
         clearTemporaryData(url: processedUrl, completion: completion)
         
+        // 导出视频
         let exportSession = AVAssetExportSession(asset: mixComposition, presetName: AVAssetExportPresetHighestQuality)
         exportSession?.videoComposition = videoComposition
         exportSession?.outputURL = processedUrl
@@ -146,10 +148,6 @@ extension URL {
                 
             }
         })
-        
-        
-        completion(URL(string: "h")!, nil)
-        
         
     }
     
