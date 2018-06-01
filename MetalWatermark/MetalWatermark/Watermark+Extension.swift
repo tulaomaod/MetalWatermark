@@ -43,7 +43,7 @@ extension UIImage {
 }
 
 let kMediaContentDefaultScale: CGFloat = 1
-let kProcessedTemporaryVideoFileName = "/processed.mov"
+let kProcessedTemporaryVideoFileName = "/processed.mp4"
 let kMediaContentTimeValue: Int64 = 1
 let kMediaContentTimeScale: Int32 = 30
 

@@ -56,10 +56,9 @@ class ViewController: UIViewController {
             
 
             if let url = url, error == nil {
-                
-                let sourceAsset = AVURLAsset(url: url)
+                print("url-\(url)")
                 var sizeOfVideo: CGSize!
-                if let track = AVAsset(url: sourceAsset.url).tracks(withMediaType: AVMediaType.video).first {
+                if let track = AVAsset(url: url).tracks(withMediaType: AVMediaType.video).first {
                     let size = track.naturalSize.applying(track.preferredTransform)
                     sizeOfVideo = CGSize(width: fabs(size.width), height: fabs(size.height))
                 } else {
